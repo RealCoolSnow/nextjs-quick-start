@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.page {
-  @apply w-full h-full;
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
+}
+
+.container {
+  @apply w-full h-full text-base;
 }
