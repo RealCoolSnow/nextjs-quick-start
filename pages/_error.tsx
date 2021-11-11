@@ -1,4 +1,10 @@
-const PageError = ({ statusCode }) => {
+import { NextPage } from 'next'
+
+type Props = {
+  statusCode?: number
+}
+
+const PageError: NextPage<Props> = ({ statusCode }) => {
   if (statusCode === 404) {
     return <h1 className="text-center">404 Not Found</h1>
   } else {
