@@ -6,9 +6,9 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-import { Header } from '../components/Header'
-import { Footer } from '../components/Footer'
-import { LocaleSwitch } from '../components/LocaleSwitch'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
+import { LocaleSwitch } from '@/components/LocaleSwitch'
 
 const Home: NextPage = () => {
   const router = useRouter()
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <div className="flex flex-col items-center pt-6">
           <LocaleSwitch />
           <div>Hello World!</div>
-          <Image src="/vercel.svg" alt="logo" width="80" height="40" />
+          <Image src="/images/logo.png" alt="logo" width="100" height="100" />
           <Link href="/about" passHref>
             <div>About</div>
           </Link>

@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
 import React from 'react'
-import { Header } from '../../components/Header'
-import { Footer } from '../../components/Footer'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
 
