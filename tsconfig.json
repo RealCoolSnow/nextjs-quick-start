@@ -20,9 +20,7 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/pages/*": ["pages/*"],
-      "@/styles/*": ["styles/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": [

@@ -517,7 +517,7 @@ astral-regex@^2.0.0:
   resolved "https://registry.npm.taobao.org/astral-regex/download/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha1-SDFDxWeu7UeFdZwIZXhtx319LjE=
 
-autoprefixer@^10.4.0:
+autoprefixer@latest:
   version "10.4.0"
   resolved "https://registry.npmmirror.com/autoprefixer/download/autoprefixer-10.4.0.tgz?cache=0&sync_timestamp=1635421245353&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fautoprefixer%2Fdownload%2Fautoprefixer-10.4.0.tgz#c3577eb32a1079a440ec253e404eaf1eb21388c8"
   integrity sha1-w1d+syoQeaRA7CU+QE6vHrITiMg=
@@ -2773,7 +2773,7 @@ postcss@^8.1.6, postcss@^8.2.1:
     nanoid "^3.1.23"
     source-map-js "^0.6.2"
 
-postcss@^8.3.11:
+postcss@latest:
   version "8.3.11"
   resolved "https://registry.npmmirror.com/postcss/download/postcss-8.3.11.tgz?cache=0&sync_timestamp=1634821260697&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fpostcss%2Fdownload%2Fpostcss-8.3.11.tgz#c3beca7ea811cd5e1c4a3ec6d2e7599ef1f8f858"
   integrity sha1-w77KfqgRzV4cSj7G0udZnvH4+Fg=
@@ -3383,7 +3383,7 @@ table@^6.0.9:
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
-tailwindcss@^2.2.19:
+tailwindcss@latest:
   version "2.2.19"
   resolved "https://registry.npmmirror.com/tailwindcss/download/tailwindcss-2.2.19.tgz?cache=0&sync_timestamp=1636463922511&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ftailwindcss%2Fdownload%2Ftailwindcss-2.2.19.tgz#540e464832cd462bb9649c1484b0a38315c2653c"
   integrity sha1-VA5GSDLNRiu5ZJwUhLCjgxXCZTw=
