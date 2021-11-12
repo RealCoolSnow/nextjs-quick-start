@@ -28,4 +28,12 @@ module.exports = {
     })
     return config
   },*/
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'http://dev.yourserver/:path*', // Proxy to Backend
+      },
+    ]
+  },
 }
