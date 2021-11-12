@@ -1,6 +1,6 @@
 {
   "name": "nextjs-quick-start",
-  "description": "Next.js Quick Start with out-of-the-box features，including typescript, i18n, axios, redux, tailwindcss, etc.",
+  "description": "Next.js Quick Start with out-of-the-box features，including TypeScript, Redux, TailwindCSS, axios, i18n, etc.",
   "version": "0.1.0",
   "private": true,
   "author": "CoolSnow(coolsnow2020@gmail.com)",
