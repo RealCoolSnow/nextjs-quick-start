@@ -1,5 +1,6 @@
 import { createModel } from '@rematch/core'
 import { RootModel } from '.'
+import Cookies from 'js-cookie'
 
 export type CommonState = {
   language: string
@@ -11,6 +12,7 @@ export const common = createModel<RootModel>()({
   } as CommonState,
   reducers: {
     setLanguage(state: CommonState, language: string) {
+      Cookies.set('NEXT_LOCALE', language)
       return {
         ...state,
         language,

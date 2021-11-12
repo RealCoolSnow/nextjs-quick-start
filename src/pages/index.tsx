@@ -24,7 +24,6 @@ const Home: NextPage = () => {
     <>
       <PageTitle title={t('home')} />
       <div className="flex flex-col items-center">
-        <LocaleSwitch />
         <div
           className="mt-8 mb-2 btn bg-blue-500 text-white"
           onClick={httpTest}
@@ -42,10 +41,14 @@ const Home: NextPage = () => {
 type StaticProps = {
   locale: string
 }
-export const getStaticProps = async ({ locale }: StaticProps) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ['common'])),
-  },
-})
+export const getStaticProps = async ({ locale }: StaticProps) => {
+  console.log(locale)
+
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  }
+}
 
 export default Home

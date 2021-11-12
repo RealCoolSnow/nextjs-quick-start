@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next'
 import Head from 'next/head'
 import { ReactElement } from 'react'
+import LocaleSwitch from '../LocaleSwitch'
 import NavBar from './NavBar'
 
 // Header
@@ -32,6 +33,9 @@ const Layout = ({ children }: Props) => {
     <>
       <Header />
       <main>
+        <div className="text-right">
+          <LocaleSwitch />
+        </div>
         <div className="mt-6">
           <NavBar />
         </div>
