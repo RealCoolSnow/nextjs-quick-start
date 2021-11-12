@@ -9,7 +9,6 @@ type Props = {
 }
 const MyLink = (props: Props) => {
   const router = useRouter()
-  console.log(router)
   return (
     <Link href={props.path}>
       <a

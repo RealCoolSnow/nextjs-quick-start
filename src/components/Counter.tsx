@@ -8,7 +8,7 @@ const Counter = () => {
   return (
     <div
       onClick={() => {
-        dispatch.counter.inc(1)
+        dispatch.counter.incAsync(1)
       }}
       className="btn text-center text-white bg-green-500"
     >

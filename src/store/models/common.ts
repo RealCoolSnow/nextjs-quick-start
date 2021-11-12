@@ -10,7 +10,7 @@ export const common = createModel<RootModel>()({
     language: 'en',
   } as CommonState,
   reducers: {
-    SET_LANGUAGE(state: CommonState, language: string) {
+    setLanguage(state: CommonState, language: string) {
       return {
         ...state,
         language,
@@ -18,8 +18,8 @@ export const common = createModel<RootModel>()({
     },
   },
   effects: (dispatch) => ({
-    async setLanguage(payload: string) {
-      dispatch.common.SET_LANGUAGE(payload)
+    async setLanguageAsync(payload: string) {
+      dispatch.common.setLanguage(payload)
     },
   }),
 })
