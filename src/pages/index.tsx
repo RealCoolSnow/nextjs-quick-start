@@ -15,8 +15,9 @@ const Home: NextPage = () => {
       <PageTitle title={t('home')} />
       <div className="flex flex-col items-center">
         <LocaleSwitch />
-        <div>Hello World!</div>
+        <div className="mt-4"></div>
         <Counter />
+        <div className="mt-4"></div>
         <Image src="/images/logo.png" alt="logo" width="100" height="100" />
       </div>
     </>
