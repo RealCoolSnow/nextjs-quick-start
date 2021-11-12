@@ -1,4 +1,8 @@
 {
   "home": "Home",
-  "about": "About"
+  "about": "About",
+  "about_page_desc": "This is about page",
+  "footer": {
+    "description": "Quick start project powerd by next.js"
+  }
 }

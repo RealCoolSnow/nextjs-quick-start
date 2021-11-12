@@ -1,4 +1,8 @@
 {
   "home": "首页",
-  "about": "关于"
+  "about": "关于",
+  "about_page_desc": "这是关于页面",
+  "footer": {
+    "description": "使用nextjs快速构建React项目"
+  }
 }

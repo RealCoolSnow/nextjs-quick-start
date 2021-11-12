@@ -1,0 +1,4 @@
+.red-text {
+  @apply text-red-500;
+  color: #ff0000;
+}

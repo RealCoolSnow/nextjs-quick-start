@@ -5,28 +5,23 @@ import { useRouter } from 'next/router'
 
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
-import { LocaleSwitch } from '@/components/LocaleSwitch'
+import LocaleSwitch from '@/components/LocaleSwitch'
+import PageTitle from '@/components/PageTitle'
 
 const Home: NextPage = () => {
   const router = useRouter()
   const { t } = useTranslation('common')
   return (
     <>
-      <Header title={t('home')}></Header>
-      <main>
-        <div className="flex flex-col items-center pt-6">
-          <LocaleSwitch />
-          <div>Hello World!</div>
-          <Image src="/images/logo.png" alt="logo" width="100" height="100" />
-          <Link href="/about" passHref>
-            <div>About</div>
-          </Link>
-        </div>
-      </main>
-      <Footer />
+      <PageTitle title={t('home')} />
+      <div className="flex flex-col items-center pt-6">
+        <LocaleSwitch />
+        <div>Hello World!</div>
+        <Image src="/images/logo.png" alt="logo" width="100" height="100" />
+        <Link href="/about" passHref>
+          <div>About</div>
+        </Link>
+      </div>
     </>
   )
 }
@@ -36,7 +31,7 @@ type StaticProps = {
 }
 export const getStaticProps = async ({ locale }: StaticProps) => ({
   props: {
-    ...(await serverSideTranslations(locale, ['common', 'footer'])),
+    ...(await serverSideTranslations(locale, ['common'])),
   },
 })
 

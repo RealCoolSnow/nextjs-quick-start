@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const LocaleSwitch = () => {
+const LocaleSwitch = () => {
   return (
     <select className="locale">
       <option value="en">en</option>
@@ -8,3 +8,5 @@ export const LocaleSwitch = () => {
     </select>
   )
 }
+
+export default LocaleSwitch

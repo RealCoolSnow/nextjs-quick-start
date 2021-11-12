@@ -1,11 +1,13 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
-export const Footer = () => {
-  const { t } = useTranslation('footer')
+const Footer = () => {
+  const { t } = useTranslation('common')
   return (
     <footer className="w-full text-center absolute bottom-1">
-      <p className="text-sm text-gray-500">{t('description')}</p>
+      <p className="text-sm text-gray-500">{t('footer.description')}</p>
     </footer>
   )
 }
+
+export default Footer
