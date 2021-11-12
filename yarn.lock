@@ -266,13 +266,6 @@
     "@types/react" "*"
     hoist-non-react-statics "^3.3.0"
 
-"@types/i18next-fs-backend@^1.0.0":
-  version "1.1.2"
-  resolved "https://registry.npmmirror.com/@types/i18next-fs-backend/download/@types/i18next-fs-backend-1.1.2.tgz#4f3116769229371fcdf64bbdb6841ea745e392f9"
-  integrity sha1-TzEWdpIpNx/N9ku9toQep0Xjkvk=
-  dependencies:
-    i18next "^21.0.1"
-
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.npm.taobao.org/@types/json5/download/@types/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
@@ -1803,14 +1796,7 @@ i18next-fs-backend@^1.0.7:
   resolved "https://registry.nlark.com/i18next-fs-backend/download/i18next-fs-backend-1.1.1.tgz#1d8028926803f63784ffa0f2b1478fb369f92735"
   integrity sha1-HYAokmgD9jeE/6DysUePs2n5JzU=
 
-i18next@^20.1.0:
-  version "20.6.1"
-  resolved "https://registry.npmmirror.com/i18next/download/i18next-20.6.1.tgz#535e5f6e5baeb685c7d25df70db63bf3cc0aa345"
-  integrity sha1-U15fbluutoXH0l33DbY788wKo0U=
-  dependencies:
-    "@babel/runtime" "^7.12.0"
-
-i18next@^21.0.1:
+i18next@^21.4.1:
   version "21.4.2"
   resolved "https://registry.npmmirror.com/i18next/download/i18next-21.4.2.tgz#10d10e07c9d1d589d71ac031f8ae755a37fcd0fc"
   integrity sha512-vVWsmTnZNdYHPLt01MvT5YNM2lxec2R6r5T72J89eaazp8XQnGSqA66O+a918qqmjHZGB6HHRSs02xp753he9g==
@@ -2340,17 +2326,16 @@ natural-compare@^1.4.0:
   resolved "https://registry.npm.taobao.org/natural-compare/download/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next-i18next@^8.9.0:
-  version "8.9.0"
-  resolved "https://registry.npmmirror.com/next-i18next/download/next-i18next-8.9.0.tgz#3f5a7f51ba3b40b60dcfd0b14c686d0657dcdd7d"
-  integrity sha1-P1p/Ubo7QLYNz9CxTGhtBlfc3X0=
+next-i18next@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.npmmirror.com/next-i18next/download/next-i18next-9.0.0.tgz#fbf60e271426b215847621e472cddf4156fc00ad"
+  integrity sha512-SHv+IcrT01OAlx5ObXciVkprcy0E0SH0Pzi3x9zpJ/DpVZdH+B62gS5gEYiaBbvfywoDcsKA62lb72noUORVlg==
   dependencies:
     "@babel/runtime" "^7.13.17"
     "@types/hoist-non-react-statics" "^3.3.1"
-    "@types/i18next-fs-backend" "^1.0.0"
     core-js "^3"
     hoist-non-react-statics "^3.2.0"
-    i18next "^20.1.0"
+    i18next "^21.4.1"
     i18next-fs-backend "^1.0.7"
     react-i18next "^11.8.13"
 
