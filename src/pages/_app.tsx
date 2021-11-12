@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 import type { AppProps, NextWebVitalsMetric } from 'next/app'
 import { appWithTranslation } from 'next-i18next'
-import Layout from '@/components/Layout'
+import Layout from '@/components/common/Layout'
 
 // export function reportWebVitals(metric: NextWebVitalsMetric) {
 //   console.log(metric)

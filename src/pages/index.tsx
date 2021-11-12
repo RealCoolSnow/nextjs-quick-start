@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import LocaleSwitch from '@/components/LocaleSwitch'
-import PageTitle from '@/components/PageTitle'
+import PageTitle from '@/components/common/PageTitle'
 
 const Home: NextPage = () => {
   const router = useRouter()
