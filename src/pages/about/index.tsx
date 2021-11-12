@@ -3,7 +3,7 @@ import React from 'react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
 import PageTitle from '@/components/common/PageTitle'
-import './index.module.css'
+import styles from './index.module.css'
 
 const About: NextPage = () => {
   const { t } = useTranslation('common')
@@ -11,8 +11,8 @@ const About: NextPage = () => {
     <>
       <PageTitle title={t('about')} />
       <div className="flex flex-col items-center">
-        <div className="red-text">{t('about_page_desc')}</div>
-      </div>{' '}
+        <div className={styles.textRed}>{t('about_page_desc')}</div>
+      </div>
     </>
   )
 }

@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next'
 import Head from 'next/head'
 import { ReactElement } from 'react'
+import NavBar from './NavBar'
 
 // Header
 const Header = () => {
@@ -30,7 +31,12 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main>
+        <div className="mt-6">
+          <NavBar />
+        </div>
+        <div className="mt-6">{children}</div>
+      </main>
       <Footer />
     </>
   )

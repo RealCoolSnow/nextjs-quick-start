@@ -1,12 +1,11 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
-
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import LocaleSwitch from '@/components/LocaleSwitch'
 import PageTitle from '@/components/common/PageTitle'
+import Counter from '@/components/Counter'
 
 const Home: NextPage = () => {
   const router = useRouter()
@@ -14,13 +13,11 @@ const Home: NextPage = () => {
   return (
     <>
       <PageTitle title={t('home')} />
-      <div className="flex flex-col items-center pt-6">
+      <div className="flex flex-col items-center">
         <LocaleSwitch />
         <div>Hello World!</div>
+        <Counter />
         <Image src="/images/logo.png" alt="logo" width="100" height="100" />
-        <Link href="/about" passHref>
-          <div>About</div>
-        </Link>
       </div>
     </>
   )

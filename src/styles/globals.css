@@ -13,3 +13,11 @@ div#__next > div {
 .container {
   @apply w-full h-full text-base;
 }
+
+.btn {
+  @apply rounded px-6 py-2;
+}
+
+.btn:active {
+  @apply opacity-70;
+}
