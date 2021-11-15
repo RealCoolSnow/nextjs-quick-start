@@ -28,6 +28,8 @@
     1. Clone this repository
     2. docker build . -t nextjs-qucik-start
     3. docker run -p 3000:3000 nextjs-qucik-start
+    # or
+    docker-compose up -d
 
 # Author
 
