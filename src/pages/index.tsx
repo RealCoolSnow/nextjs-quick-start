@@ -1,9 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import LocaleSwitch from '@/components/LocaleSwitch'
+import useTranslation from 'next-translate/useTranslation'
 import PageTitle from '@/components/common/PageTitle'
 import Counter from '@/components/Counter'
 import { helloGet2 } from '@/api/common'
@@ -36,19 +34,6 @@ const Home: NextPage = () => {
       </div>
     </>
   )
-}
-
-type StaticProps = {
-  locale: string
-}
-export const getStaticProps = async ({ locale }: StaticProps) => {
-  console.log(locale)
-
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common'])),
-    },
-  }
 }
 
 export default Home

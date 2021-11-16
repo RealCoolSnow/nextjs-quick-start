@@ -10,7 +10,7 @@
 
 - [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) - CSS framework for rapid UI development
 
-- [next-i18next](https://github.com/isaachinman/next-i18next) - The easiest way to translate your NextJs apps
+- [next-translate](https://github.com/vinissimus/next-translate) - Load page translations and use them in an easy way!
 
 - [rematch](https://github.com/rematch/rematch) - Redux best practices without the boilerplate
 

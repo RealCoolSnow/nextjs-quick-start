@@ -1,10 +1,8 @@
 import { NextPage } from 'next'
 import React from 'react'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'react-i18next'
+import useTranslation from 'next-translate/useTranslation'
 import PageTitle from '@/components/common/PageTitle'
 import styles from './index.module.css'
-import LocaleSwitch from '@/components/LocaleSwitch'
 
 const About: NextPage = () => {
   const { t } = useTranslation('common')
@@ -17,14 +15,5 @@ const About: NextPage = () => {
     </>
   )
 }
-
-type StaticProps = {
-  locale: string
-}
-export const getStaticProps = async ({ locale }: StaticProps) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ['common'])),
-  },
-})
 
 export default About

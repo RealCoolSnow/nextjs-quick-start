@@ -1,6 +1,5 @@
 import '@/styles/globals.css'
 import type { AppProps, NextWebVitalsMetric } from 'next/app'
-import { appWithTranslation } from 'next-i18next'
 import Layout from '@/components/common/Layout'
 import { Provider } from 'react-redux'
 import { store } from '@/store'
@@ -19,4 +18,4 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   )
 }
 
-export default appWithTranslation(MyApp)
+export default MyApp

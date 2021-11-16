@@ -1,4 +1,4 @@
-import { useTranslation } from 'next-i18next'
+import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import styles from './index.module.css'

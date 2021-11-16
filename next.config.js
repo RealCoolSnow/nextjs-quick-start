@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
-const { i18n } = require('./next-i18next.config')
+const nextTranslate = require('next-translate')
 
-module.exports = {
+module.exports = nextTranslate({
   reactStrictMode: true,
-  i18n,
   productionBrowserSourceMaps: false, //生产环境source map
   typescript: {
     //构建时忽略ts错误
@@ -36,4 +35,4 @@ module.exports = {
       },
     ]
   },
-}
+})

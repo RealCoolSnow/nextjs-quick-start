@@ -1,4 +1,4 @@
-import { useTranslation } from 'next-i18next'
+import useTranslation from 'next-translate/useTranslation'
 import Head from 'next/head'
 import { ReactElement } from 'react'
 import LocaleSwitch from '../LocaleSwitch'
