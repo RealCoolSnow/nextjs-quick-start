@@ -4,7 +4,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'react-i18next'
 import PageTitle from '@/components/common/PageTitle'
 import styles from './index.module.css'
-import LocaleSwitch from '@/components/LocaleSwitch'
 
 const About: NextPage = () => {
   const { t } = useTranslation('common')
