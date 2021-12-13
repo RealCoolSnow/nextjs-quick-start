@@ -23,15 +23,14 @@ const Home: NextPage = () => {
     <>
       <PageTitle title={t('home')} />
       <div className="flex flex-col items-center">
+        <Image src="/images/logo.png" alt="logo" width="100" height="100" />
         <div
-          className="mt-8 mb-2 btn bg-blue-500 text-white"
+          className="mt-8 mb-2 btn bg-blue-500 text-white shadow-xl shadow-blue-500/50 rounded-full py-2 w-32 text-center"
           onClick={httpTest}
         >
           Http Test
         </div>
         <Counter />
-        <div className="mt-2"></div>
-        <Image src="/images/logo.png" alt="logo" width="100" height="100" />
       </div>
     </>
   )

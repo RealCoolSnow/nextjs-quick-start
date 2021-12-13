@@ -10,7 +10,7 @@ const Counter = () => {
       onClick={() => {
         dispatch.counter.incAsync(1)
       }}
-      className="btn text-center text-white bg-green-500"
+      className="btn text-center text-white bg-green-500 shadow-xl shadow-green-500/50 py-2 rounded-full w-32"
     >
       Counter - {counter}
     </div>

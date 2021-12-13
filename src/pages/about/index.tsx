@@ -11,7 +11,7 @@ const About: NextPage = () => {
     <>
       <PageTitle title={t('about')} />
       <div className="flex flex-col items-center">
-        <div className={styles.textRed}>{t('about_page_desc')}</div>
+        <div className={styles.textContent}>{t('about_page_desc')}</div>
       </div>
     </>
   )
