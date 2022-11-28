@@ -1,5 +1,16 @@
 {
-    "i18n-ally.localesPaths": [
-        "public/locales"
-    ]
-}
+    "i18n-ally.localesPaths": ["public/locales"],
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    }
+  }
+  
